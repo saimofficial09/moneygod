@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyGod - Spin & Win</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💸 MoneyGod 💸</h1>
+        <p>Welcome, Lucky Spinner!</p>
+        <div class="wallet">
+            Wallet Balance: ₹<span id="balance">100</span>
+        </div>
+        <button onclick="addMoney()">Add Money</button>
+        <button onclick="withdraw()">Withdraw</button>
+
+        <div class="wheel-section">
+            <h2>🎯 Spin the Wheel 🎯</h2>
+            <div class="wheel" onclick="spinWheel()">🎡</div>
+            <p id="result">Click the wheel to spin!</p>
+        </div>
+
+        <div class="history">
+            <h3>🕒 Spin History</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
